@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - java -version
+      - mvn package
+artifacts:
+  files:
+    - '**/*'
+    - appspec.yml
+    - scripts/*
+  base-directory: 'target/CurrencyExchange'
