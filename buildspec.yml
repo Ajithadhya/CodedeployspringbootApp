@@ -10,7 +10,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - '**/*'
+    -target/CurrencyExchange.war
     - appspec.yml
     - scripts/*
-  base-directory: 'target/CurrencyExchange'
+  
